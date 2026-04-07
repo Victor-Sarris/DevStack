@@ -1,9 +1,18 @@
 import { ShaderGradientCanvas, ShaderGradient } from "shadergradient";
+import { motion } from "framer-motion";
+import heroImg from "../assets/hero.png";
+
+const fadeUpVariant = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+};
 
 function Home() {
   return (
-    <>
-      <div className="relative w-full min-h-screen overflow-hidden bg-black">
+    <div className="relative w-full min-h-screen bg-black text-white font-sans overflow-x-hidden">
+      {/* 1. FUNDO ANIMADO FIXO */}
+      {/* Usamos z-0 aqui para não sumir atrás do HTML/Body */}
+      <div className="fixed top-0 left-0 w-full h-full z-0 pointer-events-none">
         <ShaderGradientCanvas
           style={{
             position: "absolute",
@@ -11,7 +20,6 @@ function Home() {
             left: 0,
             width: "100%",
             height: "100%",
-            pointerEvents: "none",
           }}
         >
           <ShaderGradient
@@ -56,13 +64,237 @@ function Home() {
             wireframe={false}
           />
         </ShaderGradientCanvas>
-        <div className="relative z-10 flex items-center justify-center min-h-screen pointer-events-none">
-          <h1 className="text-white text-5xl font-bold">
-            Dev<span className="text-green-500">Stack</span>
-          </h1>
-        </div>
       </div>
-    </>
+
+      {/* 2. CONTEÚDO DO SITE */}
+      {/* Tudo que for texto/cards fica aqui dentro, protegido pelo z-10 */}
+      <div className="relative z-10 w-full flex flex-col items-center">
+        {/* --- SEÇÃO 1: HERO --- */}
+        <section className="relative flex items-center justify-center min-h-screen p-6 w-full">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={fadeUpVariant}
+            className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-12 bg-black/30 backdrop-blur-2xl border border-white/10 shadow-2xl p-10 rounded-3xl text-white max-w-6xl w-full"
+          >
+            <div className="flex items-center gap-6 h-full pt-2">
+              <motion.img
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ delay: 0.3, duration: 0.8 }}
+                src={heroImg}
+                alt="Ícone 3D"
+                className="w-20 md:w-28 drop-shadow-[0_0_15px_rgba(73,57,219,0.5)]"
+              />
+              <h1 className="text-6xl md:text-7xl font-bold shrink-0 tracking-tight">
+                Dev<span className="text-green-500">Stack</span>
+              </h1>
+            </div>
+
+            <div className="flex flex-col gap-6 max-w-lg w-full">
+              <p className="text-2xl md:text-3xl font-bold text-center lg:text-left leading-snug">
+                Automatize o seu dia a dia com o nosso serviço.
+              </p>
+
+              <ul className="flex flex-col gap-3 text-lg font-medium opacity-90 border-l-2 border-green-500 pl-6">
+                <motion.li
+                  whileHover={{ x: 5 }}
+                  className="transition-transform cursor-default"
+                >
+                  Scripts Automatizados
+                </motion.li>
+                <motion.li
+                  whileHover={{ x: 5 }}
+                  className="transition-transform cursor-default"
+                >
+                  Sistemas Inteligentes
+                </motion.li>
+                <motion.li
+                  whileHover={{ x: 5 }}
+                  className="transition-transform cursor-default"
+                >
+                  Integração de APIs
+                </motion.li>
+                <motion.li
+                  whileHover={{ x: 5 }}
+                  className="transition-transform cursor-default"
+                >
+                  Soluções Sob Medida
+                </motion.li>
+              </ul>
+            </div>
+          </motion.div>
+        </section>
+
+        {/* --- SEÇÃO 2: MAIS SOBRE --- */}
+        <section className="py-24 px-6 max-w-5xl mx-auto w-full">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeUpVariant}
+            className="bg-black/40 backdrop-blur-xl border border-white/5 rounded-3xl p-10"
+          >
+            <h2 className="text-4xl font-bold mb-6 border-b border-green-500/30 pb-4">
+              Mais Sobre Nós
+            </h2>
+            <p className="text-lg text-gray-300 leading-relaxed">
+              A DevStack nasceu da necessidade de otimizar processos repetitivos
+              e transformar ideias complexas em sistemas ágeis. Nosso foco
+              principal é utilizar tecnologias modernas e arquiteturas
+              escaláveis para entregar não apenas código, mas sim tempo e
+              produtividade para os nossos clientes.
+            </p>
+          </motion.div>
+        </section>
+
+        {/* --- SEÇÃO 3: O QUE ESTAMOS QUERENDO MUDAR --- */}
+        <section className="py-24 px-6 max-w-5xl mx-auto w-full">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeUpVariant}
+            className="bg-black/40 backdrop-blur-xl border border-white/5 rounded-3xl p-10"
+          >
+            <h2 className="text-4xl font-bold mb-6 border-b border-green-500/30 pb-4">
+              O Que Estamos Querendo Mudar
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+              <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
+                <h3 className="text-xl font-bold text-green-400 mb-2">
+                  Eliminar o Trabalho Manual
+                </h3>
+                <p className="text-gray-400">
+                  Automatizando tarefas repetitivas para que humanos possam
+                  focar no que realmente importa: estratégia e criatividade.
+                </p>
+              </div>
+              <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
+                <h3 className="text-xl font-bold text-green-400 mb-2">
+                  Acessibilidade Tecnológica
+                </h3>
+                <p className="text-gray-400">
+                  Levar soluções de automação e IoT, antes restritas a grandes
+                  corporações, para negócios de todos os tamanhos.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </section>
+
+        {/* --- SEÇÃO 4: PROJETOS JÁ DESENVOLVIDOS --- */}
+        <section className="py-24 px-6 max-w-7xl mx-auto w-full">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            variants={fadeUpVariant}
+          >
+            <h2 className="text-4xl font-bold mb-10 text-center">
+              Projetos Já Desenvolvidos
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <motion.div
+                whileHover={{ y: -10 }}
+                className="bg-black/50 backdrop-blur-md border border-white/10 rounded-2xl p-8 flex flex-col h-full cursor-pointer"
+              >
+                <span className="text-xs font-bold text-green-500 tracking-wider mb-2">
+                  FULLSTACK
+                </span>
+                <h3 className="text-2xl font-bold mb-4">ResourceFlow</h3>
+                <p className="text-gray-400 mb-6 flex-grow">
+                  Sistema de gestão e agendamento de recursos focado em
+                  escalabilidade e controle eficiente.
+                </p>
+                <div className="flex gap-2 opacity-70 text-sm">
+                  <span className="bg-white/10 px-3 py-1 rounded-full">
+                    Node.js
+                  </span>
+                  <span className="bg-white/10 px-3 py-1 rounded-full">
+                    React
+                  </span>
+                </div>
+              </motion.div>
+
+              <motion.div
+                whileHover={{ y: -10 }}
+                className="bg-black/50 backdrop-blur-md border border-white/10 rounded-2xl p-8 flex flex-col h-full cursor-pointer"
+              >
+                <span className="text-xs font-bold text-green-500 tracking-wider mb-2">
+                  IOT & EMBARCADOS
+                </span>
+                <h3 className="text-2xl font-bold mb-4">AC-Controller</h3>
+                <p className="text-gray-400 mb-6 flex-grow">
+                  Sistema inteligente de controle de ar-condicionado utilizando
+                  hardware embarcado e comunicação via rede.
+                </p>
+                <div className="flex gap-2 opacity-70 text-sm">
+                  <span className="bg-white/10 px-3 py-1 rounded-full">
+                    C++
+                  </span>
+                  <span className="bg-white/10 px-3 py-1 rounded-full">
+                    ESP32
+                  </span>
+                </div>
+              </motion.div>
+
+              <motion.div
+                whileHover={{ y: -10 }}
+                className="bg-black/50 backdrop-blur-md border border-white/10 rounded-2xl p-8 flex flex-col h-full cursor-pointer"
+              >
+                <span className="text-xs font-bold text-green-500 tracking-wider mb-2">
+                  VISÃO COMPUTACIONAL
+                </span>
+                <h3 className="text-2xl font-bold mb-4">
+                  Totem de Reconhecimento
+                </h3>
+                <p className="text-gray-400 mb-6 flex-grow">
+                  Controle de acesso seguro e automatizado utilizando
+                  reconhecimento facial, visão computacional e IoT.
+                </p>
+                <div className="flex gap-2 opacity-70 text-sm flex-wrap">
+                  <span className="bg-white/10 px-3 py-1 rounded-full">
+                    Python
+                  </span>
+                  <span className="bg-white/10 px-3 py-1 rounded-full">
+                    OpenCV
+                  </span>
+                </div>
+              </motion.div>
+            </div>
+          </motion.div>
+        </section>
+
+        {/* --- SEÇÃO 5: EQUIPE --- */}
+        <section className="py-24 px-6 max-w-5xl mx-auto w-full mb-20">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeUpVariant}
+            className="bg-black/40 backdrop-blur-xl border border-white/5 rounded-3xl p-10 text-center"
+          >
+            <h2 className="text-4xl font-bold mb-10">Equipe</h2>
+            <div className="flex flex-col items-center justify-center gap-4">
+              <div className="w-24 h-24 rounded-full bg-gradient-to-tr from-green-500 to-blue-600 p-1">
+                <div className="w-full h-full bg-black rounded-full flex items-center justify-center">
+                  <span className="text-2xl font-bold">VS</span>
+                </div>
+              </div>
+              <h3 className="text-2xl font-bold mt-2">Victor Sarris</h3>
+              <p className="text-green-400 font-medium tracking-wide text-sm">
+                FOUNDER & LEAD DEVELOPER
+              </p>
+              <p className="text-gray-400 max-w-md mx-auto mt-2">
+                Desenvolvedor Fullstack com grande foco em IoT, Sistemas
+                Embarcados e Web. Transformando ideias em soluções reais.
+              </p>
+            </div>
+          </motion.div>
+        </section>
+      </div>
+    </div>
   );
 }
 
