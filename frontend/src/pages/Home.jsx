@@ -1,6 +1,6 @@
 import { ShaderGradientCanvas, ShaderGradient } from "shadergradient";
 import { motion } from "framer-motion";
-import heroImg from "../assets/hero.png";
+import heroImg from "../assets/logo.png";
 
 const fadeUpVariant = {
   hidden: { opacity: 0, y: 40 },
@@ -10,8 +10,6 @@ const fadeUpVariant = {
 function Home() {
   return (
     <div className="relative w-full min-h-screen bg-black text-white font-sans overflow-x-hidden">
-      {/* 1. FUNDO ANIMADO FIXO */}
-      {/* Usamos z-0 aqui para não sumir atrás do HTML/Body */}
       <div className="fixed top-0 left-0 w-full h-full z-0 pointer-events-none">
         <ShaderGradientCanvas
           style={{
@@ -67,7 +65,6 @@ function Home() {
       </div>
 
       {/* 2. CONTEÚDO DO SITE */}
-      {/* Tudo que for texto/cards fica aqui dentro, protegido pelo z-10 */}
       <div className="relative z-10 w-full flex flex-col items-center">
         {/* --- SEÇÃO 1: HERO --- */}
         <section className="relative flex items-center justify-center min-h-screen p-6 w-full">
@@ -96,7 +93,7 @@ function Home() {
                 Automatize o seu dia a dia com o nosso serviço.
               </p>
 
-              <ul className="flex flex-col gap-3 text-lg font-medium opacity-90 border-l-2 border-green-500 pl-6">
+              <ul className="flex gap-3 text-xs font-medium opacity-90 border-l-2 border-green-500 pl-6">
                 <motion.li
                   whileHover={{ x: 5 }}
                   className="transition-transform cursor-default"
