@@ -1,5 +1,5 @@
 import { ShaderGradientCanvas, ShaderGradient } from "shadergradient";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"; // ta sendo usado sim
 import heroImg from "../assets/logo.png";
 
 const fadeUpVariant = {
@@ -64,9 +64,7 @@ function Home() {
         </ShaderGradientCanvas>
       </div>
 
-      {/* 2. CONTEÚDO DO SITE */}
       <div className="relative z-10 w-full min-h-screen flex flex-col items-center p-4 md:p-10 py-10">
-        {/* --- SEÇÃO 1: HERO --- */}
         <div className="w-full max-w-7xl bg-black/40 backdrop-blur-2xl border border-white/10 rounded-[3rem] shadow-2xl overflow-hidden pb-20">
           <section className="relative flex items-center justify-center min-h-screen p-6 w-full">
             <motion.div
@@ -75,7 +73,6 @@ function Home() {
               variants={fadeUpVariant}
               className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 p-10 text-white w-full"
             >
-              {/* === LADO ESQUERDO (Abaixo no Mobile): Imagem Principal === */}
               <div className="w-full max-w-lg lg:max-w-xl flex justify-center">
                 <motion.img
                   initial={{ opacity: 0, scale: 0.9 }}
@@ -86,7 +83,6 @@ function Home() {
                   className="w-full h-auto object-contain drop-shadow-2xl"
                 />
               </div>
-              {/* === LADO DIREITO: Título, Textos e Botão === */}
               <div className="flex flex-col gap-8 max-w-xl w-full">
                 <div className="flex items-center gap-6">
                   <motion.img
@@ -102,11 +98,9 @@ function Home() {
                     className="w-16 md:w-20 drop-shadow-[0_0_25px_rgba(5,255,80,0.4)]"
                   />
                   <h1 className="text-6xl md:text-7xl font-bold shrink-0 tracking-tight">
-                    Dev<span className="text-green-500">Stack</span>
+                    &lt;Dev<span className="text-green-500">Stack/&gt;</span>
                   </h1>
                 </div>
-
-                {/* Subtítulo */}
                 <p className="text-2xl md:text-3xl font-bold text-center lg:text-left leading-snug">
                   Automatize o seu dia a dia com o nosso serviço.
                 </p>
@@ -124,32 +118,29 @@ function Home() {
                     Soluções Sob Medida
                   </motion.li>
                 </ul>
-
-                {/* Botão CTA */}
                 <motion.button
                   whileHover={{
                     scale: 1.05,
                     boxShadow: "0px 0px 20px rgba(34, 197, 94, 0.4)",
                   }}
                   whileTap={{ scale: 0.95 }}
-                  className="mt-2 px-8 py-4 bg-green-500 text-black font-bold rounded-full w-max shadow-[0_0_15px_rgba(5,255,80,0.3)] hover:bg-green-400 transition-colors mx-auto lg:mx-0"
+                  className="mt-2 px-8 py-4 bg-green-500 text-white font-bold rounded-full w-max shadow-[0_0_15px_rgba(5,255,80,0.3)] hover:bg-green-400 transition-colors mx-auto lg:mx-0"
                 >
                   Fale com um Especialista
                 </motion.button>
               </div>
             </motion.div>
           </section>
-          {/* --- SEÇÃO 2: MAIS SOBRE --- */}
           <section className="py-16 px-6 max-w-5xl mx-auto w-full">
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
               variants={fadeUpVariant}
-              className="p-10"
+              className="bg-black/50 backdrop-blur-md border border-white/10 rounded-2xl flex flex-col h-full cursor-pointer p-10"
             >
               <h2 className="text-4xl font-bold mb-6 border-b border-green-500/30 pb-4">
-                Mais Sobre Nós
+                &lt; Mais Sobre Nós /&gt;
               </h2>
               <p className="text-lg text-gray-300 leading-relaxed">
                 A DevStack nasceu da necessidade de otimizar processos
@@ -160,17 +151,16 @@ function Home() {
               </p>
             </motion.div>
           </section>
-          {/* --- SEÇÃO 3: O QUE ESTAMOS QUERENDO MUDAR --- */}
           <section className="py-24 px-6 max-w-5xl mx-auto w-full">
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
               variants={fadeUpVariant}
-              className="p-10"
+              className="bg-black/50 backdrop-blur-md border border-white/10 rounded-2xl flex flex-col h-full cursor-pointer p-10"
             >
               <h2 className="text-4xl font-bold mb-6 border-b border-green-500/30 pb-4">
-                O Que Estamos Querendo Mudar
+                &lt; O que queremos mudar /&gt;
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
                 <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
@@ -203,7 +193,7 @@ function Home() {
               variants={fadeUpVariant}
             >
               <h2 className="text-4xl font-bold mb-10 text-center">
-                Projetos Já Desenvolvidos
+                &lt; Projetos Já Desenvolvidos /&gt;
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <motion.div
@@ -218,7 +208,7 @@ function Home() {
                     FULLSTACK
                   </span>
                   <h3 className="text-2xl font-bold mb-4">ResourceFlow</h3>
-                  <p className="text-gray-400 mb-6 flex-grow">
+                  <p className="text-gray-400 mb-6 grow">
                     Sistema de gestão e agendamento de recursos focado em
                     escalabilidade e controle eficiente.
                   </p>
@@ -243,7 +233,7 @@ function Home() {
                     IOT & EMBARCADOS
                   </span>
                   <h3 className="text-2xl font-bold mb-4">AC-Controller</h3>
-                  <p className="text-gray-400 mb-6 flex-grow">
+                  <p className="text-gray-400 mb-6 grow">
                     Sistema inteligente de controle de ar-condicionado
                     utilizando hardware embarcado e comunicação via rede.
                   </p>
@@ -270,7 +260,7 @@ function Home() {
                   <h3 className="text-2xl font-bold mb-4">
                     Totem de Reconhecimento
                   </h3>
-                  <p className="text-gray-400 mb-6 flex-grow">
+                  <p className="text-gray-400 mb-6 grow">
                     Controle de acesso seguro e automatizado utilizando
                     reconhecimento facial, visão computacional e IoT.
                   </p>
@@ -286,23 +276,24 @@ function Home() {
               </div>
             </motion.div>
           </section>
-          {/* --- SEÇÃO 5: EQUIPE --- */}
           <section className="py-24 px-6 max-w-5xl mx-auto w-full mb-20">
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
               variants={fadeUpVariant}
-              className=" p-10 text-center"
+              className="bg-black/50 backdrop-blur-md border border-white/10 rounded-2xl flex flex-col h-full cursor-pointer p-10 text-center"
             >
-              <h2 className="text-4xl font-bold mb-12">Equipe</h2>
-              {/* Usando CSS Grid para criar colunas alinhadas e responsivas */}
+              <h2 className="text-4xl font-bold mb-12">&lt; Equipe /&gt;</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-                {/* Membro 2: Philipe */}
                 <div className="flex flex-col items-center">
-                  <div className="w-24 h-24 rounded-full bg-gradient-to-tr from-green-500 to-blue-600 p-1 mb-4 shadow-lg shadow-blue-500/20">
+                  <div className="w-24 h-24 rounded-full bg-linear-to-tr from-green-500 to-blue-600 p-1 mb-4 shadow-lg shadow-blue-500/20">
                     <div className="w-full h-full bg-black rounded-full flex items-center justify-center">
-                      <span className="text-2xl font-bold">PH</span>
+                      <img
+                        src="https://imgs.search.brave.com/jWyB8-7uoTw1bFGZCeTKjvaVDT3o4sUzo0_LGQE7jtI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzNhLzEz/LzYwLzNhMTM2MDk5/NWJkZTc0MGVhYjIx/MDBkYzMwYzMwMzcw/LmpwZw"
+                        alt=""
+                        className="w-25 rounded-full"
+                      />
                     </div>
                   </div>
                   <h3 className="text-xl font-bold">Philipe</h3>
@@ -314,11 +305,14 @@ function Home() {
                     ideias inovadoras.
                   </p>
                 </div>
-                {/* Membro 1: Victor */}
                 <div className="flex flex-col items-center">
-                  <div className="w-24 h-24 rounded-full bg-gradient-to-tr from-green-500 to-blue-600 p-1 mb-4 shadow-lg shadow-green-500/20">
+                  <div className="w-24 h-24 rounded-full bg-linear-to-tr from-green-500 to-blue-600 p-1 mb-4 shadow-lg shadow-green-500/20">
                     <div className="w-full h-full bg-black rounded-full flex items-center justify-center">
-                      <span className="text-2xl font-bold">VS</span>
+                      <img
+                        src="https://avatars.githubusercontent.com/u/178488451?s=400&v=4"
+                        alt=""
+                        className="w-25 rounded-full"
+                      />
                     </div>
                   </div>
                   <h3 className="text-xl font-bold">Victor Sarrís</h3>
@@ -330,11 +324,14 @@ function Home() {
                     Embarcados e Web. Transformando ideias em soluções reais.
                   </p>
                 </div>
-                {/* Membro 3: João Vitor */}
                 <div className="flex flex-col items-center">
-                  <div className="w-24 h-24 rounded-full bg-gradient-to-tr from-green-500 to-blue-600 p-1 mb-4 shadow-lg shadow-green-500/20">
+                  <div className="w-24 h-24 rounded-full bg-linear-to-tr from-green-500 to-blue-600 p-1 mb-4 shadow-lg shadow-green-500/20">
                     <div className="w-full h-full bg-black rounded-full flex items-center justify-center">
-                      <span className="text-2xl font-bold">JV</span>
+                      <img
+                        src="https://avatars.githubusercontent.com/u/256677275?v=4"
+                        alt=""
+                        className="w-25 rounded-full"
+                      />
                     </div>
                   </div>
                   <h3 className="text-xl font-bold">João Vitor</h3>
