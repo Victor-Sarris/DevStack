@@ -2,6 +2,13 @@ import { ShaderGradientCanvas, ShaderGradient } from "shadergradient";
 import { motion } from "framer-motion"; // ta sendo usado sim
 import heroImg from "../assets/logo.png";
 
+// imagens da equipe
+import AdeandroImg from "../assets/team/Adeandro.jpg";
+import BiaImg from "../assets/team/Bia.png";
+import JoaoImg from "../assets/team/Joao.jpg";
+import PhilipeImg from "../assets/team/Philipe.png";
+import VictorImg from "../assets/team/Victor.jpg";
+
 const fadeUpVariant = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
@@ -290,7 +297,7 @@ function Home() {
                   <div className="w-24 h-24 rounded-full bg-linear-to-tr from-green-500 to-blue-600 p-1 mb-4 shadow-lg shadow-blue-500/20">
                     <div className="w-full h-full bg-black rounded-full flex items-center justify-center">
                       <img
-                        src="https://imgs.search.brave.com/jWyB8-7uoTw1bFGZCeTKjvaVDT3o4sUzo0_LGQE7jtI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzNhLzEz/LzYwLzNhMTM2MDk5/NWJkZTc0MGVhYjIx/MDBkYzMwYzMwMzcw/LmpwZw"
+                        src={PhilipeImg}
                         alt=""
                         className="w-25 rounded-full"
                       />
@@ -309,7 +316,7 @@ function Home() {
                   <div className="w-24 h-24 rounded-full bg-linear-to-tr from-green-500 to-blue-600 p-1 mb-4 shadow-lg shadow-green-500/20">
                     <div className="w-full h-full bg-black rounded-full flex items-center justify-center">
                       <img
-                        src="https://avatars.githubusercontent.com/u/178488451?s=400&v=4"
+                        src={VictorImg}
                         alt=""
                         className="w-25 rounded-full"
                       />
@@ -327,11 +334,7 @@ function Home() {
                 <div className="flex flex-col items-center">
                   <div className="w-24 h-24 rounded-full bg-linear-to-tr from-green-500 to-blue-600 p-1 mb-4 shadow-lg shadow-green-500/20">
                     <div className="w-full h-full bg-black rounded-full flex items-center justify-center">
-                      <img
-                        src="https://avatars.githubusercontent.com/u/256677275?v=4"
-                        alt=""
-                        className="w-25 rounded-full"
-                      />
+                      <img src={JoaoImg} alt="" className="w-25 rounded-full" />
                     </div>
                   </div>
                   <h3 className="text-xl font-bold">João Vitor</h3>
@@ -341,6 +344,42 @@ function Home() {
                   <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
                     Desenvolvedor hábil e prático com foco na concretização de
                     ideias.
+                  </p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="w-24 h-24 rounded-full bg-linear-to-tr from-green-500 to-blue-600 p-1 mb-4 shadow-lg shadow-green-500/20">
+                    <div className="w-full h-full bg-black rounded-full flex items-center justify-center">
+                      <img src={BiaImg} alt="" className="w-25 rounded-full" />
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold">João Vitor</h3>
+                  <p className="text-green-400 font-bold tracking-wider text-xs mt-1 mb-3">
+                    ADVOGADA ESPECIALIZADA
+                  </p>
+                  <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
+                    Advogada especializada com foco em soluções jurídicas
+                    estratégicas e seguras. Atua na análise, prevenção e
+                    resolução de questões legais, garantindo conformidade e
+                    proteção para projetos e negócios.
+                  </p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="w-24 h-24 rounded-full bg-linear-to-tr from-green-500 to-blue-600 p-1 mb-4 shadow-lg shadow-green-500/20">
+                    <div className="w-full h-full bg-black rounded-full flex items-center justify-center">
+                      <img
+                        src={AdeandroImg}
+                        alt=""
+                        className="w-25 rounded-full"
+                      />
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold">João Vitor</h3>
+                  <p className="text-green-400 font-bold tracking-wider text-xs mt-1 mb-3">
+                    ADMINISTRADOR LEGAL
+                  </p>
+                  <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
+                    Administrador legal responsável pela organização, gestão
+                    documental e suporte jurídico-administrativo.
                   </p>
                 </div>
               </div>
