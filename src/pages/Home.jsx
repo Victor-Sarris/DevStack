@@ -358,9 +358,7 @@ function Home() {
                   </p>
                   <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
                     Advogada especializada com foco em soluções jurídicas
-                    estratégicas e seguras. Atua na análise, prevenção e
-                    resolução de questões legais, garantindo conformidade e
-                    proteção para projetos e negócios.
+                    estratégicas e seguras.
                   </p>
                 </div>
                 <div className="flex flex-col items-center">
