@@ -337,7 +337,7 @@ function Home() {
                       <img src={JoaoImg} alt="" className="w-25 rounded-full" />
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold">João Vitor</h3>
+                  <h3 className="text-xl font-bold">Ana Beatriz</h3>
                   <p className="text-green-400 font-bold tracking-wider text-xs mt-1 mb-3">
                     DESENVOLVEDOR
                   </p>
@@ -352,7 +352,7 @@ function Home() {
                       <img src={BiaImg} alt="" className="w-25 rounded-full" />
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold">João Vitor</h3>
+                  <h3 className="text-xl font-bold">Adeandro Pereira</h3>
                   <p className="text-green-400 font-bold tracking-wider text-xs mt-1 mb-3">
                     ADVOGADA ESPECIALIZADA
                   </p>
