@@ -3,11 +3,11 @@ import { motion } from "framer-motion"; // ta sendo usado sim
 import heroImg from "../assets/logo.png";
 
 // imagens da equipe
-import AdeandroImg from "../assets/team/Adeandro.jpg";
-import BiaImg from "../assets/team/Bia.png";
-import JoaoImg from "../assets/team/Joao.jpg";
-import PhilipeImg from "../assets/team/Philipe.png";
-import VictorImg from "../assets/team/Victor.jpg";
+import adeandroImg from "../assets/team/Adeandro.jpg";
+import biaImg from "../assets/team/Bia.png";
+import joaoImg from "../assets/team/Joao.jpg";
+import philipeImg from "../assets/team/Philipe.png";
+import victorImg from "../assets/team/Victor.jpg";
 
 const fadeUpVariant = {
   hidden: { opacity: 0, y: 40 },
@@ -297,7 +297,7 @@ function Home() {
                   <div className="w-24 h-24 rounded-full bg-linear-to-tr from-green-500 to-blue-600 p-1 mb-4 shadow-lg shadow-blue-500/20">
                     <div className="w-full h-full bg-black rounded-full flex items-center justify-center">
                       <img
-                        src={PhilipeImg}
+                        src={philipeImg}
                         alt=""
                         className="w-25 rounded-full"
                       />
@@ -316,7 +316,7 @@ function Home() {
                   <div className="w-24 h-24 rounded-full bg-linear-to-tr from-green-500 to-blue-600 p-1 mb-4 shadow-lg shadow-green-500/20">
                     <div className="w-full h-full bg-black rounded-full flex items-center justify-center">
                       <img
-                        src={VictorImg}
+                        src={victorImg}
                         alt=""
                         className="w-25 rounded-full"
                       />
@@ -334,7 +334,7 @@ function Home() {
                 <div className="flex flex-col items-center">
                   <div className="w-24 h-24 rounded-full bg-linear-to-tr from-green-500 to-blue-600 p-1 mb-4 shadow-lg shadow-green-500/20">
                     <div className="w-full h-full bg-black rounded-full flex items-center justify-center">
-                      <img src={JoaoImg} alt="" className="w-25 rounded-full" />
+                      <img src={joaoImg} alt="" className="w-25 rounded-full" />
                     </div>
                   </div>
                   <h3 className="text-xl font-bold">Ana Beatriz</h3>
@@ -349,7 +349,7 @@ function Home() {
                 <div className="flex flex-col items-center">
                   <div className="w-24 h-24 rounded-full bg-linear-to-tr from-green-500 to-blue-600 p-1 mb-4 shadow-lg shadow-green-500/20">
                     <div className="w-full h-full bg-black rounded-full flex items-center justify-center">
-                      <img src={BiaImg} alt="" className="w-25 rounded-full" />
+                      <img src={biaImg} alt="" className="w-25 rounded-full" />
                     </div>
                   </div>
                   <h3 className="text-xl font-bold">Adeandro Pereira</h3>
@@ -365,7 +365,7 @@ function Home() {
                   <div className="w-24 h-24 rounded-full bg-linear-to-tr from-green-500 to-blue-600 p-1 mb-4 shadow-lg shadow-green-500/20">
                     <div className="w-full h-full bg-black rounded-full flex items-center justify-center">
                       <img
-                        src={AdeandroImg}
+                        src={adeandroImg}
                         alt=""
                         className="w-25 rounded-full"
                       />
