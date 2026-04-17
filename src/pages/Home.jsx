@@ -7,7 +7,7 @@ import adeandroImg from "../assets/team/Adeandro.jpg";
 import biaImg from "../assets/team/Bia.png";
 import joaoImg from "../assets/team/Joao.jpg";
 import philipeImg from "../assets/team/Philipe.png";
-import victorImg from "../assets/team/Victor.jpg";
+import victorImg from "../assets/team/victor.jpg";
 
 const fadeUpVariant = {
   hidden: { opacity: 0, y: 40 },
