@@ -3,8 +3,8 @@ import { motion } from "framer-motion"; // ta sendo usado sim
 import heroImg from "../assets/logo.png";
 
 // imagens da equipe
-import adeandroImg from "../assets/team/Adeandro.jpg";
-import biaImg from "../assets/team/Bia.png";
+// import adeandroImg from "../assets/team/Adeandro.jpg";
+// import biaImg from "../assets/team/Bia.png";
 import joaoImg from "../assets/team/Joao.jpg";
 import philipeImg from "../assets/team/Philipe.png";
 import victorImg from "../assets/team/victor.jpg";
@@ -346,7 +346,7 @@ function Home() {
                     ideias.
                   </p>
                 </div>
-                <div className="flex flex-col items-center">
+                {/* <div className="flex flex-col items-center">
                   <div className="w-24 h-24 rounded-full bg-linear-to-tr from-green-500 to-blue-600 p-1 mb-4 shadow-lg shadow-green-500/20">
                     <div className="w-full h-full bg-black rounded-full flex items-center justify-center">
                       <img src={biaImg} alt="" className="w-25 rounded-full" />
@@ -360,8 +360,8 @@ function Home() {
                     Advogada especializada com foco em soluções jurídicas
                     estratégicas e seguras.
                   </p>
-                </div>
-                <div className="flex flex-col items-center">
+                </div> */}
+                {/* <div className="flex flex-col items-center">
                   <div className="w-24 h-24 rounded-full bg-linear-to-tr from-green-500 to-blue-600 p-1 mb-4 shadow-lg shadow-green-500/20">
                     <div className="w-full h-full bg-black rounded-full flex items-center justify-center">
                       <img
@@ -379,7 +379,7 @@ function Home() {
                     Administrador legal responsável pela organização, gestão
                     documental e suporte jurídico-administrativo.
                   </p>
-                </div>
+                </div> */}
               </div>
             </motion.div>
           </section>
