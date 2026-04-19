@@ -14,6 +14,106 @@ const fadeUpVariant = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
+// --- ARRAY DE STACKS ---
+const techStacks = [
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    alt: "javascript",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    alt: "typescript",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    alt: "react",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-line-wordmark.svg",
+    alt: "aws",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg",
+    alt: "android",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg",
+    alt: "androidstudio",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
+    alt: "angularjs",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg",
+    alt: "blender",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+    alt: "c",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    alt: "docker",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
+    alt: "django",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg",
+    alt: "trello",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg",
+    alt: "tailwindcss",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    alt: "postgresql",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    alt: "nodejs",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    alt: "mongodb",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg",
+    alt: "lua",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg",
+    alt: "latex",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg",
+    alt: "jupyter",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+    alt: "java",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg",
+    alt: "ionic",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    alt: "html5",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+    alt: "figma",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    alt: "css",
+  },
+];
+
 function Home() {
   return (
     <div className="relative w-full min-h-screen bg-black text-white font-sans overflow-x-hidden">
@@ -127,17 +227,41 @@ function Home() {
                     Soluções Sob Medida
                   </motion.li>
                 </ul>
-                <motion.button
-                  whileHover={{
-                    scale: 1.05,
-                    boxShadow: "0px 0px 20px rgba(34, 197, 94, 0.4)",
-                  }}
-                  whileTap={{ scale: 0.95 }}
-                  className="mt-2 px-6 sm:px-8 py-3 sm:py-4 bg-green-500 text-white text-sm sm:text-base font-bold rounded-full w-max shadow-[0_0_15px_rgba(5,255,80,0.3)] hover:bg-green-400 transition-colors"
+                <a
+                  href="https://wa.me/558994072096?text=Olá!%20Vim%20pelo%20site%20da%20DevStack%20e%20gostaria%20de%20falar%20com%20um%20especialista."
+                  className="decoration-0 cursor-pointer"
+                  target="blank"
+                  rel="external"
                 >
-                  Fale com um Especialista
-                </motion.button>
+                  <motion.button
+                    whileHover={{
+                      scale: 1.05,
+                      boxShadow: "0px 0px 20px rgba(34, 197, 94, 0.4)",
+                    }}
+                    whileTap={{ scale: 0.95 }}
+                    className="mt-2 px-6 sm:px-8 py-3 sm:py-4 bg-green-500 text-white text-sm sm:text-base font-bold rounded-full w-max shadow-[0_0_15px_rgba(5,255,80,0.3)] hover:bg-green-400 transition-colors cursor-pointer"
+                  >
+                    Fale com um Especialista
+                  </motion.button>
+                </a>
               </div>
+            </motion.div>
+          </section>
+
+          <section className="w-full py-8 overflow-hidden relative flex items-center border-y border-white/5 bg-white/5 [mask-image:_linear-gradient(to_right,transparent_0,_black_10%,_black_90%,transparent_100%)]">
+            <motion.div
+              className="flex items-center gap-10 md:gap-16 whitespace-nowrap px-8"
+              animate={{ x: ["-50%", "0%"] }}
+              transition={{ ease: "linear", duration: 35, repeat: Infinity }}
+            >
+              {[...techStacks, ...techStacks].map((tech, idx) => (
+                <img
+                  key={idx}
+                  src={tech.src}
+                  alt={tech.alt}
+                  className="h-8 md:h-10 w-auto opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer object-contain"
+                />
+              ))}
             </motion.div>
           </section>
 
