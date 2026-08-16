@@ -5,7 +5,10 @@ import { staggerContainer, staggerItem, viewportOnce } from "../lib/animations";
 
 function Team() {
   return (
-    <section id="equipe" className="scroll-mt-24 py-12 md:py-24 px-4 sm:px-6 max-w-5xl mx-auto w-full mb-4 md:mb-8">
+    <section
+      id="equipe"
+      className="scroll-mt-24 py-12 md:py-24 px-4 sm:px-6 max-w-5xl mx-auto w-full mb-4 md:mb-8"
+    >
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -14,7 +17,7 @@ function Team() {
         className="bg-black/50 backdrop-blur-md border border-white/10 rounded-2xl flex flex-col h-full p-6 sm:p-8 md:p-10 text-center"
       >
         <SectionHeading kicker="Quem constrói" title="Equipe" />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <div className="flex flex-wrap justify-center gap-10 md:gap-14">
           {team.map((member, idx) => (
             <motion.div
               key={member.name}

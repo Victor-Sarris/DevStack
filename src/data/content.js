@@ -14,30 +14,102 @@ export const navLinks = [
 ];
 
 export const techStacks = [
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", alt: "javascript" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", alt: "typescript" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", alt: "react" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-line-wordmark.svg", alt: "aws" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg", alt: "android" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg", alt: "androidstudio" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg", alt: "angularjs" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg", alt: "blender" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg", alt: "c" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg", alt: "docker" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg", alt: "django" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg", alt: "trello" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg", alt: "tailwindcss" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", alt: "postgresql" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", alt: "nodejs" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", alt: "mongodb" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg", alt: "lua" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg", alt: "latex" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg", alt: "jupyter" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", alt: "java" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg", alt: "ionic" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", alt: "html5" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", alt: "figma" },
-  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", alt: "css" },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    alt: "javascript",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    alt: "typescript",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    alt: "react",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-line-wordmark.svg",
+    alt: "aws",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg",
+    alt: "android",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg",
+    alt: "androidstudio",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
+    alt: "angularjs",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg",
+    alt: "blender",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+    alt: "c",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    alt: "docker",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
+    alt: "django",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg",
+    alt: "trello",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg",
+    alt: "tailwindcss",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    alt: "postgresql",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    alt: "nodejs",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    alt: "mongodb",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg",
+    alt: "lua",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg",
+    alt: "latex",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg",
+    alt: "jupyter",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+    alt: "java",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg",
+    alt: "ionic",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    alt: "html5",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+    alt: "figma",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    alt: "css",
+  },
 ];
 
 export const services = [
@@ -83,22 +155,26 @@ export const process = [
   {
     step: "01",
     title: "Diagnóstico",
-    description: "Entendemos o problema, o processo atual e onde a automação gera mais impacto.",
+    description:
+      "Entendemos o problema, o processo atual e onde a automação gera mais impacto.",
   },
   {
     step: "02",
     title: "Prototipagem",
-    description: "Validamos a solução com protótipos rápidos antes de investir em desenvolvimento completo.",
+    description:
+      "Validamos a solução com protótipos rápidos antes de investir em desenvolvimento completo.",
   },
   {
     step: "03",
     title: "Desenvolvimento",
-    description: "Construímos com tecnologias modernas, testando cada etapa para garantir qualidade e escala.",
+    description:
+      "Construímos com tecnologias modernas, testando cada etapa para garantir qualidade e escala.",
   },
   {
     step: "04",
     title: "Suporte Contínuo",
-    description: "Acompanhamos o sistema em produção e evoluímos a solução junto com o crescimento do negócio.",
+    description:
+      "Acompanhamos o sistema em produção e evoluímos a solução junto com o crescimento do negócio.",
   },
 ];
 
@@ -127,12 +203,12 @@ export const projects = [
 ];
 
 export const team = [
-  {
-    name: "Philipe",
-    role: "Desenvolvedor",
-    image: philipeImg,
-    description: "Desenvolvedor Júnior com foco em aprendizagem e construir ideias inovadoras.",
-  },
+  // {
+  //   name: "Philipe",
+  //   role: "Desenvolvedor",
+  //   image: philipeImg,
+  //   description: "Desenvolvedor Júnior com foco em aprendizagem e construir ideias inovadoras.",
+  // },
   {
     name: "Victor Sarrís",
     role: "Criador e Lead Developer",
@@ -144,7 +220,8 @@ export const team = [
     name: "João Vitor Fialho",
     role: "Desenvolvedor",
     image: joaoImg,
-    description: "Desenvolvedor hábil e prático com foco na concretização de ideias.",
+    description:
+      "Desenvolvedor hábil e prático com foco na concretização de ideias.",
   },
 ];
 
