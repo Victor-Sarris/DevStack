@@ -13,7 +13,7 @@ function Footer() {
           <div className="flex items-center gap-2">
             <img src={logo} alt="DevStack" className="w-7 h-7 object-contain" />
             <span className="text-lg font-bold tracking-tight">
-              &lt;Dev<span className="text-green-500">Stack/&gt;</span>
+              &lt;Dev<span className="text-purple-500">Stack/&gt;</span>
             </span>
           </div>
           <p className="text-sm text-gray-400 leading-relaxed">
@@ -31,7 +31,7 @@ function Footer() {
               key={link.id}
               type="button"
               onClick={() => scrollToId(link.id)}
-              className="text-sm text-gray-400 hover:text-green-400 transition-colors cursor-pointer"
+              className="text-sm text-gray-400 hover:text-purple-400 transition-colors cursor-pointer"
             >
               {link.label}
             </button>
@@ -46,7 +46,7 @@ function Footer() {
             href={whatsappLink}
             target="_blank"
             rel="noreferrer external"
-            className="flex items-center gap-2 text-sm text-gray-400 hover:text-green-400 transition-colors cursor-pointer"
+            className="flex items-center gap-2 text-sm text-gray-400 hover:text-purple-400 transition-colors cursor-pointer"
           >
             <MessageCircle size={16} />
             WhatsApp

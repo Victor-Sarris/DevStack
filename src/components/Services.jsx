@@ -15,7 +15,10 @@ const icons = { Bot, Cpu, Code2, Workflow, ScanFace, LayoutDashboard };
 
 function Services() {
   return (
-    <section id="servicos" className="scroll-mt-24 py-12 md:py-24 px-4 sm:px-6 max-w-7xl mx-auto w-full">
+    <section
+      id="servicos"
+      className="scroll-mt-24 py-12 md:py-24 px-4 sm:px-6 max-w-7xl mx-auto w-full"
+    >
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -33,12 +36,12 @@ function Services() {
                 variants={staggerItem}
                 whileHover={{
                   y: -8,
-                  boxShadow: "0px 10px 30px -10px rgba(34, 197, 94, 0.35)",
+                  boxShadow: "0px 10px 30px -10px rgba(97, 34, 197, 0.4)",
                   borderColor: "rgba(255,255,255,0.3)",
                 }}
                 className="bg-black/50 backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-8 flex flex-col h-full cursor-default"
               >
-                <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-green-500/10 border border-green-500/30 flex items-center justify-center mb-5 text-green-400">
+                <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center mb-5 text-purple-400">
                   <Icon size={26} />
                 </div>
                 <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3">

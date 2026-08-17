@@ -30,7 +30,7 @@ function Team() {
             >
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-linear-to-tr from-green-500 to-blue-600 p-1 mb-4 shadow-lg shadow-green-500/20"
+                className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-linear-to-tr from-purple-500 to-blue-600 p-1 mb-4 shadow-lg shadow-purple-500/20"
               >
                 <div className="w-full h-full bg-black rounded-full flex items-center justify-center overflow-hidden">
                   <img
@@ -41,7 +41,7 @@ function Team() {
                 </div>
               </motion.div>
               <h3 className="text-lg md:text-xl font-bold">{member.name}</h3>
-              <p className="text-green-400 font-bold tracking-wider text-[10px] md:text-xs mt-1 mb-3 uppercase">
+              <p className="text-purple-400 font-bold tracking-wider text-[10px] md:text-xs mt-1 mb-3 uppercase">
                 {member.role}
               </p>
               <p className="text-gray-400 text-xs md:text-sm leading-relaxed max-w-[14rem] md:max-w-xs">

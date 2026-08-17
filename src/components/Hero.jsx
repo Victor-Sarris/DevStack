@@ -32,7 +32,7 @@ function Hero() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs md:text-sm font-bold tracking-wide"
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-400 text-xs md:text-sm font-bold tracking-wide"
           >
             <Sparkles size={14} />
             Automação &bull; IoT &bull; Web
@@ -52,13 +52,13 @@ function Hero() {
               className="w-12 sm:w-16 md:w-20 drop-shadow-[0_0_25px_rgba(5,255,80,0.4)]"
             />
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold shrink-0 tracking-tight">
-              &lt;Dev<span className="text-green-500">Stack/&gt;</span>
+              &lt;Dev<span className="text-cyan-500">Stack/&gt;</span>
             </h1>
           </div>
           <p className="text-xl sm:text-2xl md:text-3xl font-bold leading-snug">
             Automatize o seu dia a dia com o nosso serviço.
           </p>
-          <ul className="flex flex-wrap justify-center lg:justify-start gap-3 md:gap-4 text-xs sm:text-sm font-medium opacity-90 border-t-2 lg:border-t-0 lg:border-l-2 border-green-500 pt-4 lg:pt-0 lg:pl-6">
+          <ul className="flex flex-wrap justify-center lg:justify-start gap-3 md:gap-4 text-xs sm:text-sm font-medium opacity-90 border-t-2 lg:border-t-0 lg:border-l-2 border-purple-500 pt-4 lg:pt-0 lg:pl-6">
             <motion.li whileHover={{ x: 5 }} className="cursor-default">
               Scripts Automatizados
             </motion.li>
@@ -83,10 +83,10 @@ function Hero() {
               <motion.button
                 whileHover={{
                   scale: 1.05,
-                  boxShadow: "0px 0px 20px rgba(34, 197, 94, 0.4)",
+                  boxShadow: "0px 0px 20px rgba(97, 34, 197, 0.4)",
                 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-green-500 text-black text-sm sm:text-base font-bold rounded-full w-max shadow-[0_0_15px_rgba(5,255,80,0.3)] hover:bg-green-400 transition-colors cursor-pointer"
+                className="flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-cyan-500 text-black text-sm sm:text-base font-bold rounded-full w-max shadow-[0_0_15px_rgba(97, 34, 197, 0.3)] hover:bg-cyan-400 transition-colors cursor-pointer"
               >
                 <MessageCircle size={18} />
                 Fale com um Especialista

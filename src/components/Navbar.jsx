@@ -10,7 +10,11 @@ function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const { scrollYProgress } = useScroll();
-  const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 25, restDelta: 0.001 });
+  const progress = useSpring(scrollYProgress, {
+    stiffness: 120,
+    damping: 25,
+    restDelta: 0.001,
+  });
   const activeId = useScrollSpy(navLinks.map((link) => link.id));
 
   useEffect(() => {
@@ -35,7 +39,7 @@ function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
       <motion.div
-        className="h-[3px] bg-gradient-to-r from-green-400 via-emerald-400 to-blue-500 origin-left"
+        className="h-[3px] bg-gradient-to-r from-purple-400 via-purple-400 to-blue-500 origin-left"
         style={{ scaleX: progress }}
       />
       <nav
@@ -55,10 +59,10 @@ function Navbar() {
             <img
               src={logo}
               alt="DevStack"
-              className="w-8 h-8 md:w-9 md:h-9 object-contain drop-shadow-[0_0_12px_rgba(5,255,80,0.4)] group-hover:scale-110 transition-transform"
+              className="w-8 h-8 md:w-9 md:h-9 object-contain drop-shadow-[0_0_12px_rgba(97, 34, 197, 0.4)] group-hover:scale-110 transition-transform"
             />
             <span className="text-lg md:text-xl font-bold tracking-tight">
-              &lt;Dev<span className="text-green-500">Stack/&gt;</span>
+              &lt;Dev<span className="text-cyan-500">Stack/&gt;</span>
             </span>
           </button>
 
@@ -89,9 +93,12 @@ function Navbar() {
           <div className="hidden lg:block">
             <a href={whatsappLink} target="_blank" rel="noreferrer external">
               <motion.button
-                whileHover={{ scale: 1.05, boxShadow: "0px 0px 20px rgba(34, 197, 94, 0.4)" }}
+                whileHover={{
+                  scale: 1.05,
+                  boxShadow: "0px 0px 20px rgba(97, 34, 197, 0.4)",
+                }}
                 whileTap={{ scale: 0.95 }}
-                className="px-5 py-2.5 bg-green-500 text-black text-sm font-bold rounded-full shadow-[0_0_15px_rgba(5,255,80,0.3)] hover:bg-green-400 transition-colors cursor-pointer"
+                className="px-5 py-2.5 bg-cyan-500 text-black text-sm font-bold rounded-full shadow-[0_0_15px_rgba(97, 34, 197, 0.4)] hover:bg-cyan-400 transition-colors cursor-pointer"
               >
                 Fale Conosco
               </motion.button>
@@ -141,7 +148,7 @@ function Navbar() {
             >
               <button
                 type="button"
-                className="w-full px-5 py-3 bg-green-500 text-black text-base font-bold rounded-xl hover:bg-green-400 transition-colors cursor-pointer"
+                className="w-full px-5 py-3 bg-purple-500 text-black text-base font-bold rounded-xl hover:bg-purple-400 transition-colors cursor-pointer"
               >
                 Fale Conosco
               </button>
