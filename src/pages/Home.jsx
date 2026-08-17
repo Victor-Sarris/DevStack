@@ -33,8 +33,8 @@ function Home() {
             cDistance={3.09}
             cPolarAngle={60}
             cameraZoom={0.99}
-            color1="#05ff50"
-            color2="#4939db"
+            color1="#58BAC7"
+            color2="#C946CB"
             color3="#104534"
             destination="onCanvas"
             embedMode="off"
