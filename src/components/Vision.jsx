@@ -22,7 +22,7 @@ function Vision() {
             variants={staggerItem}
             className="bg-white/5 p-5 md:p-6 rounded-2xl border border-white/10"
           >
-            <h3 className="text-lg md:text-xl font-bold text-purple-400 mb-2">
+            <h3 className="text-lg md:text-xl font-bold text-amber-400 mb-2">
               Eliminar o Trabalho Manual
             </h3>
             <p className="text-sm md:text-base text-gray-400">
@@ -35,7 +35,7 @@ function Vision() {
             variants={staggerItem}
             className="bg-white/5 p-5 md:p-6 rounded-2xl border border-white/10"
           >
-            <h3 className="text-lg md:text-xl font-bold text-purple-400 mb-2">
+            <h3 className="text-lg md:text-xl font-bold text-amber-400 mb-2">
               Acessibilidade Tecnológica
             </h3>
             <p className="text-sm md:text-base text-gray-400">

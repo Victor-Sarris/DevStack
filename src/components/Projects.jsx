@@ -25,12 +25,12 @@ function Projects() {
               variants={staggerItem}
               whileHover={{
                 y: -10,
-                boxShadow: "0px 10px 30px -10px rgba(97, 34, 197, 0.4)",
+                boxShadow: "0px 10px 30px -10px rgba(251, 146, 60, 0.5)",
                 borderColor: "rgba(255,255,255,0.3)",
               }}
               className="bg-black/50 backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-8 flex flex-col h-full cursor-default"
             >
-              <span className="text-[10px] md:text-xs font-bold text-purple-500 tracking-wider mb-2">
+              <span className="text-[10px] md:text-xs font-bold text-amber-500 tracking-wider mb-2">
                 {project.tag}
               </span>
               <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">
@@ -56,7 +56,7 @@ function Projects() {
             variants={staggerItem}
             className="border border-dashed border-white/20 rounded-2xl p-6 md:p-8 flex flex-col h-full items-start justify-center gap-3 text-gray-400"
           >
-            <div className="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400">
+            <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
               <Sparkles size={20} />
             </div>
             <h3 className="text-lg md:text-xl font-bold text-white">

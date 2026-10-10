@@ -1,6 +1,8 @@
 import joaoImg from "../assets/team/Joao.jpg";
 import philipeImg from "../assets/team/Philipe.png";
 import victorImg from "../assets/team/victor.jpg";
+import PedroLucas from "../assets/team/PedroLucas.jpeg";
+import James from "../assets/team/James.jpg";
 
 export const whatsappLink =
   "https://wa.me/558994072096?text=Olá!%20Vim%20pelo%20site%20da%20DevStack%20e%20gostaria%20de%20falar%20com%20um%20especialista.";
@@ -220,6 +222,20 @@ export const team = [
     name: "João Vitor Fialho",
     role: "Desenvolvedor",
     image: joaoImg,
+    description:
+      "Desenvolvedor hábil e prático com foco na concretização de ideias.",
+  },
+  {
+    name: "James Dean",
+    role: "Desenvolvedor",
+    image: James,
+    description:
+      "Desenvolvedor hábil e prático com foco na concretização de ideias.",
+  },
+  {
+    name: "Pedro Lucas",
+    role: "Desenvolvedor",
+    image: PedroLucas,
     description:
       "Desenvolvedor hábil e prático com foco na concretização de ideias.",
   },

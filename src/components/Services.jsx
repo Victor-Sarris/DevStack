@@ -36,12 +36,12 @@ function Services() {
                 variants={staggerItem}
                 whileHover={{
                   y: -8,
-                  boxShadow: "0px 10px 30px -10px rgba(97, 34, 197, 0.4)",
+                  boxShadow: "0px 10px 30px -10px rgba(251, 146, 60, 0.5)",
                   borderColor: "rgba(255,255,255,0.3)",
                 }}
                 className="bg-black/50 backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-8 flex flex-col h-full cursor-default"
               >
-                <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center mb-5 text-purple-400">
+                <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center mb-5 text-amber-400">
                   <Icon size={26} />
                 </div>
                 <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3">

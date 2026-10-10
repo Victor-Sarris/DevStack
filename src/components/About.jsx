@@ -44,7 +44,7 @@ function About() {
               variants={staggerItem}
               className="flex flex-col items-center md:items-start gap-1 p-4 rounded-xl bg-white/5 border border-white/10"
             >
-              <span className="text-2xl md:text-3xl font-bold text-purple-400">
+              <span className="text-2xl md:text-3xl font-bold text-amber-400">
                 {stat.value}
               </span>
               <span className="text-xs md:text-sm text-gray-400 text-center md:text-left">

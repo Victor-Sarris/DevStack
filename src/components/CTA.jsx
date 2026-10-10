@@ -14,9 +14,9 @@ function CTA() {
         whileInView="visible"
         viewport={viewportOnce}
         variants={fadeUpVariant}
-        className="relative overflow-hidden bg-linear-to-br from-purple-500/10 via-black/50 to-blue-600/10 backdrop-blur-md border border-white/10 rounded-3xl p-8 sm:p-10 md:p-16 text-center flex flex-col items-center gap-6"
+        className="relative overflow-hidden bg-linear-to-br from-amber-500/15 via-black/50 to-orange-600/15 backdrop-blur-md border border-white/10 rounded-3xl p-8 sm:p-10 md:p-16 text-center flex flex-col items-center gap-6"
       >
-        <span className="text-[11px] md:text-xs font-bold tracking-[0.25em] text-purple-400 uppercase">
+        <span className="text-[11px] md:text-xs font-bold tracking-[0.25em] text-amber-400 uppercase">
           Vamos conversar
         </span>
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight max-w-2xl">
@@ -30,10 +30,10 @@ function CTA() {
           <motion.button
             whileHover={{
               scale: 1.05,
-              boxShadow: "0px 0px 25px rgba(97, 34, 197, 0.4)",
+              boxShadow: "0px 0px 25px rgba(251, 146, 60, 0.55)",
             }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center gap-2 mt-2 px-8 py-4 bg-purple-500 text-black text-base font-bold rounded-full shadow-[0_0_15px_rgba(97, 34, 197, 0.4)] hover:bg-purple-400 transition-colors cursor-pointer"
+            className="flex items-center gap-2 mt-2 px-8 py-4 bg-amber-500 text-black text-base font-bold rounded-full shadow-[0_0_15px_rgba(251,146,60,0.5)] hover:bg-amber-400 transition-colors cursor-pointer"
           >
             <MessageCircle size={20} />
             Fale com um Especialista

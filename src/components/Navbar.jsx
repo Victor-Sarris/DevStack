@@ -39,7 +39,7 @@ function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
       <motion.div
-        className="h-[3px] bg-gradient-to-r from-purple-400 via-purple-400 to-blue-500 origin-left"
+        className="h-[3px] bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500 origin-left"
         style={{ scaleX: progress }}
       />
       <nav
@@ -59,10 +59,10 @@ function Navbar() {
             <img
               src={logo}
               alt="DevStack"
-              className="w-8 h-8 md:w-9 md:h-9 object-contain drop-shadow-[0_0_12px_rgba(97, 34, 197, 0.4)] group-hover:scale-110 transition-transform"
+              className="w-8 h-8 md:w-9 md:h-9 object-contain drop-shadow-[0_0_12px_rgba(251,146,60,0.6)] group-hover:scale-110 transition-transform"
             />
             <span className="text-lg md:text-xl font-bold tracking-tight">
-              &lt;Dev<span className="text-cyan-500">Stack/&gt;</span>
+              &lt;Dev<span className="text-amber-500">Stack/&gt;</span>
             </span>
           </button>
 
@@ -95,10 +95,10 @@ function Navbar() {
               <motion.button
                 whileHover={{
                   scale: 1.05,
-                  boxShadow: "0px 0px 20px rgba(97, 34, 197, 0.4)",
+                  boxShadow: "0px 0px 20px rgba(251, 146, 60, 0.5)",
                 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-5 py-2.5 bg-cyan-500 text-black text-sm font-bold rounded-full shadow-[0_0_15px_rgba(97, 34, 197, 0.4)] hover:bg-cyan-400 transition-colors cursor-pointer"
+                className="px-5 py-2.5 bg-amber-500 text-black text-sm font-bold rounded-full shadow-[0_0_15px_rgba(251,146,60,0.5)] hover:bg-amber-400 transition-colors cursor-pointer"
               >
                 Fale Conosco
               </motion.button>
@@ -148,7 +148,7 @@ function Navbar() {
             >
               <button
                 type="button"
-                className="w-full px-5 py-3 bg-purple-500 text-black text-base font-bold rounded-xl hover:bg-purple-400 transition-colors cursor-pointer"
+                className="w-full px-5 py-3 bg-amber-500 text-black text-base font-bold rounded-xl hover:bg-amber-400 transition-colors cursor-pointer"
               >
                 Fale Conosco
               </button>
