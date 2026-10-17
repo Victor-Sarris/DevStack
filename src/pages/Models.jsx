@@ -1,62 +1,65 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowLeft, UploadCloud, MessageCircle, Sparkles } from "lucide-react";
-import { whatsappLink } from "../data/content.js"; // Importando o link do whatsapp
+import { whatsappLink } from "../data/content.js";
 
-// Substitua os 'url' pelos links dos seus modelos no Sketchfab
 const models = [
   {
     id: "1",
-    title: "Sistema Embarcado / IoT",
-    description: "Modelo 3D de São Miguel Arcanjo.",
+    title: "São Miguel Arcanjo.s",
+    description:
+      "Réplica detalhada da escultura clássica com escudo e espada, ideal para decoração ou arte sacra.",
     url: "https://sketchfab.com/models/cea7631807214295aa081e7b0d7f64a0/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark",
   },
   {
     id: "2",
-    title: "Impressão 3D de Peça",
-    description: "Case customizado para projeto",
+    title: "São Miguel Arcanjo V2.",
+    description: "Modelo decorativo de um anjo em pose de guarda ou ascensão.",
     url: "https://sketchfab.com/models/6a0092e40d1e465f986288583825b529/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark",
   },
   {
     id: "3",
-    title: "Protótipo Robótico",
-    description: "Braço mecânico articulado",
+    title: "Estátua de Jesus moderna.",
+    description:
+      "Reprodução em 3D do famoso monumento brasileiro de braços abertos.",
     url: "https://sketchfab.com/models/5d026aa357dd423e8ead785788387b76/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark",
   },
   {
     id: "4",
-    title: "Protótipo Robótico",
-    description: "Braço mecânico articulado",
+    title: "Máscara de Samurai",
+    description: "Máscara inspirada nas leis de Bushido.",
     url: "https://sketchfab.com/models/f07d72075d80415da4082fc603e1a101/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark",
   },
   {
     id: "5",
-    title: "Protótipo Robótico",
-    description: "Braço mecânico articulado",
+    title: "Protótipo Robótico.",
+    description:
+      "Vaso decorativo e oco em formato de gato dormindo, perfeito para suculentas ou como porta-objetos.",
     url: "https://sketchfab.com/models/e4cde9b7919c49e7be13446b49e118ff/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark",
   },
   {
     id: "6",
-    title: "Protótipo Robótico",
-    description: "Braço mecânico articulado",
+    title: "Autobots e Decepticons simbols",
+    description: "Simbolos dos clássicos autobots e decepticons.",
     url: "https://sketchfab.com/models/3daebbc52b4342a7907edfe8d421b1cb/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark",
   },
   {
     id: "7",
-    title: "Protótipo Robótico",
-    description: "Braço mecânico articulado",
+    title: "Conjunto de Chaveiros Circulares.",
+    description:
+      "Três pequenas peças achatadas com uma alça lateral, ideais para serem usadas como chaveiros, etiquetas de identificação.",
     url: "https://sketchfab.com/models/f0e8200bea834f1d904f036fec5035e8/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark",
   },
   {
     id: "8",
-    title: "Protótipo Robótico",
-    description: "Braço mecânico articulado",
+    title: "Chaveiro de Rusky Siberiano.",
+    description: "Chaveiro personalizado para o uso do dia a dia.",
     url: "https://sketchfab.com/models/d1a39b7d39e94e4684ea4a54e520b2ce/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark",
   },
   {
     id: "9",
-    title: "Protótipo Robótico",
-    description: "Braço mecânico articulado",
+    title: "Suporte decorativo para controle.",
+    description: "Pode ser usado para controle de XBOX ou PLAYSTATION",
     url: "https://sketchfab.com/models/3db44875076042ad8bfa3949baffae60/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark",
   },
 ];
