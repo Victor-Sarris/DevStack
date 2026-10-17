@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
-import { stats } from "../data/content";
+import { stats } from "../../data/content";
 import {
   fadeUpVariant,
   staggerContainer,
   staggerItem,
   viewportOnce,
-} from "../lib/animations";
+} from "../../lib/animations";
 
 function About() {
   return (

@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
-import { team } from "../data/content";
-import { staggerContainer, staggerItem, viewportOnce } from "../lib/animations";
+import { team } from "../../data/content";
+import {
+  staggerContainer,
+  staggerItem,
+  viewportOnce,
+} from "../../lib/animations";
 
 function Team() {
   return (

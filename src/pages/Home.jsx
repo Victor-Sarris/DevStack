@@ -1,17 +1,17 @@
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import TechMarquee from "../components/TechMarquee";
-import About from "../components/About";
-import Services from "../components/Services";
-import Vision from "../components/Vision";
-import Process from "../components/Process";
-import Projects from "../components/Projects";
-import Team from "../components/Team";
-import CTA from "../components/CTA";
-import Footer from "../components/Footer";
-import ScrollToTopButton from "../components/ScrollToTopButton";
+import Navbar from "../components/HomePages/Navbar.jsx";
+import Hero from "../components/HomePages/Hero.jsx";
+import TechMarquee from "../components/HomePages/TechMarquee.jsx";
+import About from "../components/HomePages/About.jsx";
+import Services from "../components/HomePages/Services.jsx";
+import Vision from "../components/HomePages/Vision.jsx";
+import Process from "../components/HomePages/Process.jsx";
+import Projects from "../components/HomePages/Projects.jsx";
+import Team from "../components/HomePages/Team.jsx";
+import CTA from "../components/HomePages/CTA.jsx";
+import Footer from "../components/HomePages/Footer.jsx";
+import ScrollToTopButton from "../components/HomePages/ScrollToTopButton.jsx";
 
-import { BlackHoleHeroSection } from "../components/black-hore-hero-section.jsx";
+import { BlackHoleHeroSection } from "../components/HomePages/black-hore-hero-section.jsx";
 
 function Home() {
   return (
@@ -36,7 +36,7 @@ function Home() {
       <Navbar />
 
       <div className="relative z-10 w-full min-h-screen flex flex-col items-center p-3 sm:p-4 md:p-10 pt-20 md:pt-24 pb-10">
-        <div className="w-full max-w-7xl bg-[#0a0714]/55 backdrop-blur-2xl border border-violet-400/15 rounded-3xl md:rounded-[3rem] shadow-[0_0_90px_-25px_rgba(139,92,246,0.55),0_0_140px_-40px_rgba(251,146,60,0.35)] overflow-hidden">
+        <div className="w-full bg-[#0a0714]/55 backdrop-blur-2xl border border-violet-400/15 rounded-3xl md:rounded-[3rem] shadow-[0_0_90px_-25px_rgba(139,92,246,0.55),0_0_140px_-40px_rgba(251,146,60,0.35)] overflow-hidden">
           <Hero />
           <TechMarquee />
           <About />

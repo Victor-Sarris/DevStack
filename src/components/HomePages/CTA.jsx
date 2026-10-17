@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
-import { whatsappLink } from "../data/content";
-import { fadeUpVariant, viewportOnce } from "../lib/animations";
+import { whatsappLink } from "../../data/content";
+import { fadeUpVariant, viewportOnce } from "../../lib/animations";
 
 function CTA() {
   return (

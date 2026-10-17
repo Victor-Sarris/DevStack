@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
-import { staggerContainer, staggerItem, viewportOnce } from "../lib/animations";
+import {
+  staggerContainer,
+  staggerItem,
+  viewportOnce,
+} from "../../lib/animations";
 
 function Vision() {
   return (

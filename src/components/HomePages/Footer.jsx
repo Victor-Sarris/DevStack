@@ -1,7 +1,7 @@
 import { MessageCircle } from "lucide-react";
-import logo from "../assets/logo.png";
-import { navLinks, whatsappLink } from "../data/content";
-import { scrollToId } from "../lib/scrollTo";
+import logo from "../../assets/logo.png";
+import { navLinks, whatsappLink } from "../../data/content";
+import { scrollToId } from "../../lib/scrollTo";
 
 function Footer() {
   const year = new Date().getFullYear();

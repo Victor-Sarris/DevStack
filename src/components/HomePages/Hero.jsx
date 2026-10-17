@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { ArrowDown, MessageCircle, Sparkles } from "lucide-react";
-import heroImg from "../assets/logo.png";
-import { whatsappLink } from "../data/content";
-import { fadeUpVariant } from "../lib/animations";
-import { scrollToId } from "../lib/scrollTo";
+import heroImg from "../../assets/logo.png";
+import { whatsappLink } from "../../data/content.js";
+import { fadeUpVariant } from "../../lib/animations";
+import { scrollToId } from "../../lib/scrollTo";
 
 function Hero() {
   return (

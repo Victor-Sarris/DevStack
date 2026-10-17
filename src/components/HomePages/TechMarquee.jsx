@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { techStacks } from "../data/content";
+import { techStacks } from "../../data/content";
 
 function TechMarquee() {
   return (

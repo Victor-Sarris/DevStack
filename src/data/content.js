@@ -1,5 +1,4 @@
 import joaoImg from "../assets/team/Joao.jpg";
-import philipeImg from "../assets/team/Philipe.png";
 import victorImg from "../assets/team/victor.jpg";
 import PedroLucas from "../assets/team/PedroLucas.jpeg";
 import James from "../assets/team/James.jpg";
@@ -117,39 +116,23 @@ export const techStacks = [
 export const services = [
   {
     icon: "Bot",
-    title: "Automação de Processos",
-    description:
-      "Scripts e sistemas sob medida que eliminam tarefas repetitivas e otimizam o fluxo de trabalho da sua equipe.",
-  },
-  {
-    icon: "Cpu",
-    title: "Sistemas Embarcados & IoT",
-    description:
-      "Hardware conectado, sensores e controle inteligente para levar automação real ao mundo físico.",
+    title: "Modelamento 3D",
+    description: "Modelos e impressão 3d feitos sob medida. ",
+    link: "/modelos-3d",
   },
   {
     icon: "Code2",
     title: "Desenvolvimento Web Fullstack",
     description:
       "Aplicações modernas, escaláveis e responsivas — do banco de dados até a interface do usuário.",
-  },
-  {
-    icon: "Workflow",
-    title: "Integração de APIs",
-    description:
-      "Conectamos sistemas e serviços para que os dados da sua operação fluam sem atrito entre plataformas.",
-  },
-  {
-    icon: "ScanFace",
-    title: "Visão Computacional",
-    description:
-      "Reconhecimento facial, controle de acesso e análise de imagem em tempo real para segurança e automação.",
+    link: "/",
   },
   {
     icon: "LayoutDashboard",
     title: "Sistemas de Gestão Sob Medida",
     description:
       "Plataformas de gestão, agendamento e controle construídas para a realidade específica do seu negócio.",
+    link: "/",
   },
 ];
 

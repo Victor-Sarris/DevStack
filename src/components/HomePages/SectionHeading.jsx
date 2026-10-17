@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { fadeUpVariant } from "../lib/animations";
+import { fadeUpVariant } from "../../lib/animations";
 
 function SectionHeading({ kicker, title, align = "center", className = "" }) {
   const alignClasses =

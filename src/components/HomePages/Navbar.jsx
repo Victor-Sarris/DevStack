@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion, useScroll, useSpring } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { navLinks, whatsappLink } from "../data/content";
-import { useScrollSpy } from "../hooks/useScrollSpy";
-import { scrollToId } from "../lib/scrollTo";
-import logo from "../assets/logo.png";
+import { navLinks, whatsappLink } from "../../data/content";
+import { useScrollSpy } from "../../hooks/useScrollSpy";
+import { scrollToId } from "../../lib/scrollTo";
+import logo from "../../assets/logo.png";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);

@@ -1,8 +1,12 @@
 import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
 import SectionHeading from "./SectionHeading";
-import { projects } from "../data/content";
-import { staggerContainer, staggerItem, viewportOnce } from "../lib/animations";
+import { projects } from "../../data/content";
+import {
+  staggerContainer,
+  staggerItem,
+  viewportOnce,
+} from "../../lib/animations";
 
 function Projects() {
   return (
