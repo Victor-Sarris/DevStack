@@ -19,4 +19,43 @@
     <div id="root"></div>
     <script type="module" src="src/Main.jsx"></script>
   </body>
+  <script>
+    (() => {
+      const MOBILE_BREAKPOINT = "(max-width: 767px)";
+
+      const isMobile = window.matchMedia(MOBILE_BREAKPOINT).matches;
+      if (isMobile) return;
+
+      const userwayScript = document.createElement("script");
+      userwayScript.src = "https://cdn.userway.org/widget.js";
+      userwayScript.setAttribute("data-account", "ZGKiuLM2Nr");
+      document.body.appendChild(userwayScript);
+
+      const positionVlibrasButton = () => {
+        const wrapper = document.getElementById("vlibras-access-wrapper");
+        const accessButton =
+          wrapper?.shadowRoot?.getElementById("vlibras-access");
+
+        if (!accessButton) return false;
+
+        accessButton.style.setProperty("top", "calc(50vh - 70px)", "important");
+        accessButton.style.setProperty("right", "13px", "important");
+        return true;
+      };
+
+      const vlibrasScript = document.createElement("script");
+      vlibrasScript.src = "https://vlibras.gov.br/app/vlibras-plugin.js";
+      vlibrasScript.async = true;
+      vlibrasScript.onload = () => {
+        if (!positionVlibrasButton()) {
+          const observer = new MutationObserver(() => {
+            if (positionVlibrasButton()) observer.disconnect();
+          });
+
+          observer.observe(document.body, { childList: true });
+        }
+      };
+      document.body.appendChild(vlibrasScript);
+    })();
+  </script>
 </html>
