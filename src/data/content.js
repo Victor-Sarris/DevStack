@@ -125,7 +125,7 @@ export const services = [
     title: "Desenvolvimento Web Fullstack",
     description:
       "Aplicações modernas, escaláveis e responsivas — do banco de dados até a interface do usuário.",
-    link: "/",
+    link: "/sites",
   },
   {
     icon: "LayoutDashboard",
