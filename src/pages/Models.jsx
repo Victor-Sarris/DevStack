@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowLeft, UploadCloud, MessageCircle, Sparkles } from "lucide-react";
 import { whatsappLink } from "../data/content.js";
+import LazySketchfab from "../components/LazySketchfab.jsx";
 
 const models = [
   {
@@ -9,58 +10,58 @@ const models = [
     title: "São Miguel Arcanjo.s",
     description:
       "Réplica detalhada da escultura clássica com escudo e espada, ideal para decoração ou arte sacra.",
-    url: "https://sketchfab.com/models/cea7631807214295aa081e7b0d7f64a0/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark",
+    url: "https://sketchfab.com/models/cea7631807214295aa081e7b0d7f64a0/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark&graph_optimizer=1&scrollwheel=0",
   },
   {
     id: "2",
     title: "São Miguel Arcanjo V2.",
     description: "Modelo decorativo de um anjo em pose de guarda ou ascensão.",
-    url: "https://sketchfab.com/models/6a0092e40d1e465f986288583825b529/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark",
+    url: "https://sketchfab.com/models/6a0092e40d1e465f986288583825b529/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark&graph_optimizer=1&scrollwheel=0",
   },
   {
     id: "3",
     title: "Estátua de Jesus moderna.",
     description:
       "Reprodução em 3D do famoso monumento brasileiro de braços abertos.",
-    url: "https://sketchfab.com/models/5d026aa357dd423e8ead785788387b76/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark",
+    url: "https://sketchfab.com/models/5d026aa357dd423e8ead785788387b76/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark&graph_optimizer=1&scrollwheel=0",
   },
   {
     id: "4",
     title: "Máscara de Samurai",
     description: "Máscara inspirada nas leis de Bushido.",
-    url: "https://sketchfab.com/models/f07d72075d80415da4082fc603e1a101/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark",
+    url: "https://sketchfab.com/models/f07d72075d80415da4082fc603e1a101/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark&graph_optimizer=1&scrollwheel=0",
   },
   {
     id: "5",
     title: "Protótipo Robótico.",
     description:
       "Vaso decorativo e oco em formato de gato dormindo, perfeito para suculentas ou como porta-objetos.",
-    url: "https://sketchfab.com/models/e4cde9b7919c49e7be13446b49e118ff/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark",
+    url: "https://sketchfab.com/models/e4cde9b7919c49e7be13446b49e118ff/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark&graph_optimizer=1&scrollwheel=0",
   },
   {
     id: "6",
     title: "Autobots e Decepticons simbols",
     description: "Simbolos dos clássicos autobots e decepticons.",
-    url: "https://sketchfab.com/models/3daebbc52b4342a7907edfe8d421b1cb/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark",
+    url: "https://sketchfab.com/models/3daebbc52b4342a7907edfe8d421b1cb/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark&graph_optimizer=1&scrollwheel=0",
   },
   {
     id: "7",
     title: "Conjunto de Chaveiros Circulares.",
     description:
       "Três pequenas peças achatadas com uma alça lateral, ideais para serem usadas como chaveiros, etiquetas de identificação.",
-    url: "https://sketchfab.com/models/f0e8200bea834f1d904f036fec5035e8/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark",
+    url: "https://sketchfab.com/models/f0e8200bea834f1d904f036fec5035e8/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark&graph_optimizer=1&scrollwheel=0",
   },
   {
     id: "8",
     title: "Chaveiro de Rusky Siberiano.",
     description: "Chaveiro personalizado para o uso do dia a dia.",
-    url: "https://sketchfab.com/models/d1a39b7d39e94e4684ea4a54e520b2ce/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark",
+    url: "https://sketchfab.com/models/d1a39b7d39e94e4684ea4a54e520b2ce/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark&graph_optimizer=1&scrollwheel=0",
   },
   {
     id: "9",
     title: "Suporte decorativo para controle.",
     description: "Pode ser usado para controle de XBOX ou PLAYSTATION",
-    url: "https://sketchfab.com/models/3db44875076042ad8bfa3949baffae60/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark",
+    url: "https://sketchfab.com/models/3db44875076042ad8bfa3949baffae60/embed?autospin=1&autostart=0&transparent=1&ui_theme=dark&graph_optimizer=1&scrollwheel=0",
   },
 ];
 
@@ -110,31 +111,21 @@ export default function Models3D() {
 
         {/* Grid de Modelos */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {models.map((model, index) => (
+          {models.map((model) => (
             <motion.div
               key={model.id}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5 }}
               className="flex flex-col bg-[#0a0714]/80 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden hover:border-amber-500/40 transition-colors shadow-lg group"
             >
               {/* Container do Iframe do Sketchfab */}
-              <div className="relative w-full aspect-video bg-[#111] overflow-hidden">
-                <iframe
-                  title={model.title}
-                  src={model.url}
-                  frameBorder="0"
-                  allow="autoplay; fullscreen; xr-spatial-tracking"
-                  xr-spatial-tracking
-                  execution-while-out-of-viewport
-                  execution-while-not-rendered
-                  className="absolute top-0 left-0 w-full h-full border-none"
-                  loading="lazy"
-                />
-              </div>
+              <LazySketchfab modelUrl={model.url} title={model.title} />
 
               {/* Informações do Modelo */}
-              <div className="p-5 flex flex-col flex-grow">
+              <div className="p-5 flex flex-col grow">
+                {" "}
+                {/* flex-grow trocado por grow */}
                 <h2 className="text-lg font-bold text-white mb-1 group-hover:text-amber-400 transition-colors">
                   {model.title}
                 </h2>
@@ -144,7 +135,6 @@ export default function Models3D() {
           ))}
         </div>
 
-        {/* Banner Final Chamativo (Call to Action) */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}

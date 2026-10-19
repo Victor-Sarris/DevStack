@@ -7,7 +7,7 @@ import {
   Workflow,
   ScanFace,
   LayoutDashboard,
-  ArrowRight, // Importei o ícone de seta
+  ArrowRight,
 } from "lucide-react";
 import SectionHeading from "./SectionHeading";
 import { services } from "../../data/content";
@@ -19,7 +19,6 @@ import {
 
 const icons = { Bot, Cpu, Code2, Workflow, ScanFace, LayoutDashboard };
 
-// Criamos um Link animado
 const MotionLink = motion(Link);
 
 function Services() {
